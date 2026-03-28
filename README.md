@@ -45,9 +45,21 @@ Identificar fatores associados ao atraso no TPB e compreender em quais etapas do
 
 ## Principais insights
 
-- O atraso no TPB está mais associado a etapas pré-hospitalares
-- Variáveis de transporte e tempo na origem têm maior impacto
-- Existe variabilidade significativa entre unidades de origem
+Resultados e Visualizações
+- Evolução do percentual dentro da meta (TPB ≤ 120 min)
+![Evolução do TPB](images/evolucao_tpb.png)
+
+Observa-se uma variação no percentual de pacientes dentro da meta ao longo dos anos, indicando instabilidade no desempenho do fluxo assistencial.
+
+- Percentual de pacientes dentro da meta
+![Percentual dentro da meta](images/percentual_meta.png)
+
+O percentual de cumprimento da meta permanece abaixo do ideal, reforçando a necessidade de intervenções no processo.
+
+- Unidades associadas ao maior risco de atraso
+![Risco de atraso](images/risco_atraso_TPB.png)
+
+Há diferença relevante entre unidades de origem, indicando possíveis gargalos estruturais ou operacionais.
 
 ---
 
