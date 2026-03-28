@@ -1,39 +1,57 @@
-# Análise do Tempo Porta-Balão no Projeto SUPRA
+# Análise do Tempo Porta-Balão (TPB) – Projeto SUPRA
 
-## Visão geral
-Este projeto apresenta uma análise exploratória e preditiva sobre o fluxo assistencial de pacientes com suspeita de IAMCSST confirmados no contexto do Projeto SUPRA, com foco nos tempos críticos do atendimento e no indicador Tempo Porta-Balão (TPB).
+## Contexto
+Este projeto analisa o fluxo assistencial de pacientes com suspeita de IAM com supra de ST (IAMCSST) no contexto do Projeto SUPRA, com foco no indicador crítico **Tempo Porta-Balão (TPB)**.
+
+O TPB é um dos principais indicadores de qualidade no atendimento cardiovascular, com meta recomendada de **≤ 120 minutos**.
+
+---
 
 ## Objetivo
-Investigar o comportamento das principais variáveis temporais do fluxo assistencial, identificar padrões de atraso e explorar fatores associados ao não atingimento da meta de TPB total menor que 120 minutos.
+Identificar fatores associados ao atraso no TPB e compreender em quais etapas do fluxo assistencial ocorrem os maiores gargalos.
 
-## Período analisado
-2023 a 2025
+---
 
-## Dados analisados
-O conjunto de dados utilizado neste projeto contém informações anonimizadas e agregadas sobre pacientes com suspeita de IAMCSST confirmados.
+## Dados
+- Período: 2023–2025  
+- Casos: Pacientes com IAMCSST confirmados  
+- Variáveis principais:
+  - Tempo Porta-ECG (TPE)
+  - Tempo na unidade de origem
+  - Tempo de transporte
+  - TPB hospitalar
+  - TPB total
 
-As variáveis principais incluem:
-- TPE
-- Tempo na unidade de origem
-- Tempo de transporte
-- TPB hospitalar
-- TPB total
+> ⚠️ Os dados não estão disponíveis publicamente por questões de privacidade e governança.
 
-## Etapas do projeto
-- Descrição e inspeção dos dados
+---
+
+## Metodologia
+
+### 1. Análise exploratória
 - Estatísticas descritivas
-- Análise exploratória
-- Visualização dos tempos do fluxo
-- Avaliação do atingimento da meta de TPB < 120 min
-- Modelagem preditiva com regressão logística
-- Interpretação dos resultados
+- Distribuição dos tempos
+- Identificação de outliers
+
+### 2. Avaliação de desempenho
+- Percentual de casos dentro da meta (TPB < 120 min)
+- Análise por etapa do fluxo
+
+### 3. Modelagem preditiva
+- Regressão logística para prever atraso no TPB
+- Identificação das variáveis mais relevantes
+
+---
 
 ## Principais insights
-- Identificação de variáveis com maior associação ao atraso no TPB total
-- Compreensão de etapas do fluxo com maior impacto no tempo final
-- Apoio à tomada de decisão orientada por dados em saúde
 
-## Tecnologias utilizadas
+- O atraso no TPB está mais associado a etapas pré-hospitalares
+- Variáveis de transporte e tempo na origem têm maior impacto
+- Existe variabilidade significativa entre unidades de origem
+
+---
+
+## Tecnologias
 - Python
 - Pandas
 - NumPy
@@ -42,21 +60,29 @@ As variáveis principais incluem:
 - Scikit-learn
 - Jupyter Notebook
 
+---
+
 ## Estrutura do projeto
-```text
-analise-iamcsst-tpb/
-├── data/
+projeto-supra-analise-dados/
+├── data/ # não versionado
 ├── notebooks/
-│   └── analise_projeto_SUPRA.ipynb
+│ └── analise_projeto_SUPRA.ipynb
 ├── README.md
 ├── requirements.txt
 └── .gitignore
 
 
-##Observação sobre os dados
+---
 
-O dataset original não foi disponibilizado neste repositório por motivos de privacidade, sigilo institucional e governança de dados.
+## Aplicação prática
 
-Autora
+Este tipo de análise pode ser utilizado para:
 
-Larissa Dias
+- Redução de tempo de atendimento em redes de urgência
+- Monitoramento de indicadores críticos
+- Apoio à tomada de decisão baseada em dados na saúde
+
+---
+
+## Autora
+Larissa Dias  
